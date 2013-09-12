@@ -1,0 +1,188 @@
+.bk-deleteicon {
+  font-family: 'wope', arial, sans-serif;
+  color: #999999;
+}
+#bk-overlay {
+  background-color: #000000;
+}
+.bkCalBtn {
+  background-image: url(img/calendar_open_btn.png);
+  -webkit-background-size: 34px 20px;
+  background-size: 34px 20px;
+}
+table.bkCal {
+  background-color: #EEE;
+}
+table.bkCal thead th {
+  font-weight: normal;
+}
+.bkCalHead {
+  color: black;
+  background-color: #b8cafa;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d4e0ff), color-stop(100%, #b8cafa));
+  background-image: -webkit-linear-gradient(top, #d4e0ff 0%, #b8cafa 100%);
+  background-image: linear-gradient(top, #d4e0ff 0%, #b8cafa 100%);
+}
+li.bkCalTitle {
+  font-weight: bold;
+}
+li.bkCalClose,
+li.bkCalMonthNavNext,
+li.bkCalMonthNavPrev {
+  font-family: 'wope', arial, sans-serif;
+  color: #2e6dd4;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+table.bkCal tr.bkCalWeekDays th {
+  border: none;
+  background-color: #2e6dd4;
+  color: white;
+}
+table.bkCal tbody td {
+  border: 1px solid #EEE;
+  background-color: white;
+}
+table.bkCal tbody td.bkCalWeekend {
+  background-color: #eceefc;
+}
+table.bkCal tbody td.bkCalToday {
+  background-color: #d2e2fc;
+  color: #2e6dd4;
+}
+table.bkCal tbody td.bkCalOtherMonth {
+  color: #DDD;
+}
+table.bkCal tbody td.bkCalSelectedDay {
+  background-color: #FFCC99;
+  color: #2e6dd4;
+}
+.bk-carousel {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.bk-carousel .bk-slider {
+  text-align: center;
+}
+.bk-carousel .bk-btn {
+  font-family: 'wope', arial, sans-serif;
+  color: #4f5255;
+  font-size: 2em;
+  margin: 2px 5px 2px 5px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #4f5255;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.bk-carousel .bk-btn-off {
+  color: #DDD;
+  border-color: #DDD;
+}
+.bk-carousel .bk-bullets span {
+  width: 19px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 2em;
+  color: #DDDDDD;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+  padding: 0 3px;
+}
+.bk-carousel .bk-bullets span.bk-active {
+  color: #4f5255;
+  font-size: 2.1em;
+  text-shadow: 0 0px 0 rgba(0, 0, 0, 0.35);
+}
+.bk-carousel .bk-bullets span.bk-numbers {
+  color: black;
+  font-size: 1em;
+  width: auto;
+  position: relative;
+  top: -0.2em;
+}
+.bk-coverflow {
+  padding-bottom: 14px;
+  padding-top: 5px;
+}
+.bk-coverflow .shadow {
+  background-image: url(img/bk-coverflow-shadow.png);
+}
+.bk-coverflow .bk-bullets span {
+  width: 19px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 2em;
+  color: #DDDDDD;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+  padding: 0 3px;
+}
+.bk-coverflow .bk-bullets span.bk-active {
+  color: #4f5255;
+  font-size: 2.1em;
+  text-shadow: 0 0px 0 rgba(0, 0, 0, 0.35);
+}
+.bk-coverflow .bk-bullets span.bk-numbers {
+  color: black;
+  font-size: 1em;
+  width: auto;
+  position: relative;
+  top: -0.2em;
+}
+.bk-coverflow .bk-btn {
+  font-family: 'wope', arial, sans-serif;
+  color: #4f5255;
+  font-size: 2em;
+  margin: 2px 5px 2px 5px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #4f5255;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+th.bk-sort-header {
+  text-shadow: 0 1px 0 #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+th.bk-sort-header::-moz-selection,
+th.bk-sort-header::selection {
+  background: transparent;
+}
+table th.bk-sort-header:after {
+  content: '';
+  float: right;
+  margin-top: 7px;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-color: #404040 transparent;
+  visibility: hidden;
+}
+table th.bk-sort-header:hover:after {
+  visibility: visible;
+}
+table th.bk-sort-header:hover:after {
+  visibility: visible;
+}
+table th.bk-sort-disabled.bk-sort-header:hover:after {
+  visibility: hidden;
+}
+table th.bk-sort-up:after,
+table th.bk-sort-down:after,
+table th.bk-sort-down:hover:after {
+  visibility: visible;
+  opacity: 0.4;
+}
+table th.bk-sort-down:after {
+  border-bottom: none;
+  border-width: 4px 4px 0;
+}
+@font-face {
+  font-family: 'wope';
+  src: url(fonts/wope_normal.ttf);
+  font-weight: normal;
+}
