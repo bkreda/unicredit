@@ -49,6 +49,7 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
 
     <gap:platform name="ios" />
+    <gap:platform name="android" />
     
     <access origin="*" />
 </widget>
