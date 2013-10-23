@@ -1,149 +1,217 @@
+/* 
+This file must be hosted in the css directory at the root of the application.
+
+Edit this file only for colors, borders, background colors, etc.
+Do not set any absolute size as it may break the layout on particular devices. 
+
+All unused style should be erased in order to keep this file as lightweight as possible.
+*/
+
+
+/* This font is served by WOPE */
+@font-face {
+    font-family: 'wope';
+    src: url('/widgets/wope_normal.ttf');
+    font-weight:normal;
+}
+
+/* /////////////////////////////////   input fields clear button  ///////////////////////////////// */
+
 .bk-deleteicon {
-  font-family: 'wope', arial, sans-serif;
-  color: #999999;
+    font-family: 'wope', arial, sans-serif;
+    color:#999999;
 }
+
+/* /////////////////////////////////   CALENDAR input type date UI widget  ///////////////////////////////// */
+
+/* Color of the calendar background overlay */
 #bk-overlay {
-  background-color: #000000;
+    background-color: #000000; 
 }
+
+/* Icon to open the calendar */
 .bkCalBtn {
-  background-image: url(img/calendar_open_btn.png);
-  -webkit-background-size: 34px 20px;
-  background-size: 34px 20px;
+    background-image:url('/img/calendar_open_btn.png');
+    background-size: 34px 20px;
 }
+
+/* Calendar global background */
 table.bkCal {
-  background-color: #EEE;
+    background-color:#EEE;
 }
+
+/* Calendar head */
 table.bkCal thead th {
-  font-weight: normal;
+    font-weight:normal;
 }
 .bkCalHead {
-  color: black;
-  background-color: #b8cafa;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d4e0ff), color-stop(100%, #b8cafa));
-  background-image: -webkit-linear-gradient(top, #d4e0ff 0%, #b8cafa 100%);
-  background-image: linear-gradient(top, #d4e0ff 0%, #b8cafa 100%);
+    color:black;
+    background-color:#b8cafa;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4e0ff), color-stop(100%,#b8cafa));
+    background-image: linear-gradient(top, #d4e0ff 0%,#b8cafa 100%);
 }
 li.bkCalTitle {
-  font-weight: bold;
+    font-weight:bold;
 }
-li.bkCalClose,
-li.bkCalMonthNavNext,
-li.bkCalMonthNavPrev {
-  font-family: 'wope', arial, sans-serif;
-  color: #2e6dd4;
-  text-shadow: 0px 1px 0px #ffffff;
+li.bkCalClose, li.bkCalMonthNavNext, li.bkCalMonthNavPrev {
+    font-family: 'wope', arial, sans-serif;
+    color:#2e6dd4; 
+    text-shadow: 0px 1px 0px #ffffff;
 }
+
+
+/* Calendar week days */
 table.bkCal tr.bkCalWeekDays th {
-  border: none;
-  background-color: #2e6dd4;
-  color: white;
+    border:none;
+    background-color:#2e6dd4;
+    color:white;
 }
+    
+/* Calendar dates : default*/
 table.bkCal tbody td {
-  border: 1px solid #EEE;
-  background-color: white;
+    border:1px solid #EEE;
+    background-color:white;
 }
+    
+/* Calendar dates : weekends*/
 table.bkCal tbody td.bkCalWeekend {
-  background-color: #eceefc;
+    background-color:#eceefc;
 }
+    
+/* Calendar dates : today*/
 table.bkCal tbody td.bkCalToday {
-  background-color: #d2e2fc;
-  color: #2e6dd4;
+    background-color:#d2e2fc;
+    color:#2e6dd4;
 }
+
+/* Calendar dates : next and previous month columns*/
 table.bkCal tbody td.bkCalOtherMonth {
-  color: #DDD;
+    color:#DDD;
 }
+
+/* Calendar dates : selected day*/
 table.bkCal tbody td.bkCalSelectedDay {
-  background-color: #FFCC99;
-  color: #2e6dd4;
+    background-color:#FFCC99;
+    color:#2e6dd4;
 }
+
+
+
+/* /////////////////////////////////   CAROUSEL UI widget  ///////////////////////////////// */
+
 .bk-carousel {
-  padding-bottom: 5px;
-  padding-top: 5px;
-  padding-left: 14px;
-  padding-right: 14px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left:14px;
+    padding-right: 14px;
 }
+
+/* Active zone without buttons and bullets */
 .bk-carousel .bk-slider {
-  text-align: center;
+    text-align:center;
 }
-.bk-carousel .bk-btn {
-  font-family: 'wope', arial, sans-serif;
-  color: #4f5255;
-  font-size: 2em;
-  margin: 2px 5px 2px 5px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #4f5255;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+
+/* Left and right arrows */
+.bk-carousel .bk-btn{
+    font-family: 'wope', arial, sans-serif;
+    color:#4f5255; 
+    font-size: 2em;
+    margin:2px 5px 2px 5px;
+    text-align:center;
+    width:30px; height:30px;line-height:30px;
+    border:1px solid #4f5255;
+    border-radius:5px;
 }
+/* Inactive arrow decoration*/
 .bk-carousel .bk-btn-off {
-  color: #DDD;
-  border-color: #DDD;
+    color: #DDD;
+    border-color: #DDD;
 }
+
+/* Bullets and item number decoration 
+.bk-carousel .bk-bullets {
+
+}
+*/
+/* Bullets decoration */
 .bk-carousel .bk-bullets span {
-  width: 19px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 2em;
-  color: #DDDDDD;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
-  padding: 0 3px;
+    width: 19px;
+    height: 30px;
+    line-height:30px;
+    font-size: 2em;
+    /* Inactive bullet style*/
+    color:#DDDDDD;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .35);
+    padding: 0 3px;
 }
+/* Active bullet decoration*/
 .bk-carousel .bk-bullets span.bk-active {
-  color: #4f5255;
-  font-size: 2.1em;
-  text-shadow: 0 0px 0 rgba(0, 0, 0, 0.35);
+    color:#4f5255;
+    font-size: 2.1em;
+    text-shadow: 0 0px 0 rgba(0, 0, 0, .35);
 }
+/* Numbers decoration for devices that do not display bullets */
 .bk-carousel .bk-bullets span.bk-numbers {
-  color: black;
-  font-size: 1em;
-  width: auto;
-  position: relative;
-  top: -0.2em;
+    color:black;
+    font-size:1em;
+    width: auto;
+    position : relative;
+    top:-0.20em;
 }
+
+
+/* //////////////////////////////// COVERFLOW UI widget ///////////////////////////// */
+
 .bk-coverflow {
-  padding-bottom: 14px;
-  padding-top: 5px;
+    padding-bottom: 14px;
+    padding-top: 5px;
 }
+
+/* Image's bottom shadow */
 .bk-coverflow .shadow {
-  background-image: url(img/bk-coverflow-shadow.png);
+    background-image: url(/img/bk-coverflow-shadow.png);
 }
+
+/* Bullets decoration */
 .bk-coverflow .bk-bullets span {
-  width: 19px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 2em;
-  color: #DDDDDD;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
-  padding: 0 3px;
+    width: 19px;
+    height: 30px;
+    line-height:30px;
+    font-size: 2em;
+    /* Inactive bullet style*/
+    color:#DDDDDD;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .35);
+    padding: 0 3px;
 }
+/* Active bullet decoration*/
 .bk-coverflow .bk-bullets span.bk-active {
-  color: #4f5255;
-  font-size: 2.1em;
-  text-shadow: 0 0px 0 rgba(0, 0, 0, 0.35);
+    color:#4f5255;
+    font-size: 2.1em;
+    text-shadow: 0 0px 0 rgba(0, 0, 0, .35);
 }
+/* Numbers decoration for devices that do not display bullets */
 .bk-coverflow .bk-bullets span.bk-numbers {
-  color: black;
-  font-size: 1em;
-  width: auto;
-  position: relative;
-  top: -0.2em;
+    color:black;
+    font-size:1em;
+    width: auto;
+    position : relative;
+    top:-0.20em;
 }
-.bk-coverflow .bk-btn {
-  font-family: 'wope', arial, sans-serif;
-  color: #4f5255;
-  font-size: 2em;
-  margin: 2px 5px 2px 5px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #4f5255;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+
+/* Left and right arrows */
+.bk-coverflow .bk-btn{
+    font-family: 'wope', arial, sans-serif;
+    color:#4f5255; 
+    font-size: 2em;
+    margin:2px 5px 2px 5px;
+    text-align:center;
+    width:30px; height:30px;line-height:30px;
+    border:1px solid #4f5255;
+    border-radius:5px;
 }
+
+/* /////////////////////////////////   Tablesort specific styling (data-bk-sortable='true' in <th>)  ///////////////////////////////// */
+
 th.bk-sort-header {
   text-shadow: 0 1px 0 #fff;
   padding-top: 10px;
@@ -168,6 +236,7 @@ table th.bk-sort-header:hover:after {
 table th.bk-sort-header:hover:after {
   visibility: visible;
 }
+/* We don't want to display sort arrow when sort is disabled */
 table th.bk-sort-disabled.bk-sort-header:hover:after {
   visibility: hidden;
 }
@@ -180,9 +249,4 @@ table th.bk-sort-down:hover:after {
 table th.bk-sort-down:after {
   border-bottom: none;
   border-width: 4px 4px 0;
-}
-@font-face {
-  font-family: 'wope';
-  src: url(fonts/wope_normal.ttf);
-  font-weight: normal;
 }
