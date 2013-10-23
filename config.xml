@@ -51,7 +51,7 @@
     <gap:platform name="ios" />
     <gap:platform name="android" />
 
-    <content src="http://it.wope.us/client/support/1893" />
+    <content src="index.html" />
     
     <access origin="*" />
 </widget>
