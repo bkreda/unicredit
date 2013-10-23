@@ -140,14 +140,13 @@ table.bkCal tbody td.bkCalSelectedDay {
     line-height:30px;
     font-size: 2em;
     /* Inactive bullet style*/
-    color:#DDDDDD;
+    color:#4f5255;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .35);
     padding: 0 3px;
 }
 /* Active bullet decoration*/
 .bk-carousel .bk-bullets span.bk-active {
-    color:#4f5255;
-    font-size: 2.1em;
+    color:white;
     text-shadow: 0 0px 0 rgba(0, 0, 0, .35);
 }
 /* Numbers decoration for devices that do not display bullets */

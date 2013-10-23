@@ -145,7 +145,7 @@ a {
     background: linear-gradient(to bottom, #d74229 0%,#e05438 29%,#e35b3d 36%,#e76141 39%,#e45c3e 43%,#de5236 46%,#d64129 50%,#cb301a 57%,#c52a15 68%,#b51a06 86%,#af1302 96%,#ab0e00 100%); /* W3C */
 }
 
-@bk-media (min-width:320px) {
+@media (min-width:320px) {
     .twoCol-chart-layout {
         display: table;
         width: 100%;
@@ -286,11 +286,9 @@ a {
     color: #C5DCE6;
 }
 
-@bk-media (mobile_browser: WebKit/iPhone) or (mobile_browser: WebKit/Android) {
     .menu .bk-btn {
         display:none;
     }
-}
 
 .menu-table {
     display:table;
